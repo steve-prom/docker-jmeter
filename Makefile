@@ -2,7 +2,7 @@ TARGET_HOST ?= "www.map5.nl"
 TARGET_PORT ?= "80"
 THREADS ?= "1"
 CONTAINER_NAME ?= "docker-jmeter"
-IMAGE = "justb4/jmeter:5.3"
+IMAGE = "preomenade/jmeter:5.4.1"
 TEST ?= trivial
 JVM_ARGS ?= "-Xms1g -Xmx1g -XX:MaxMetaspaceSize=256m"
 TARGET_PATH ?= "/kaarten.html"

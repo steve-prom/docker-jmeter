@@ -1,17 +1,17 @@
 # inspired by https://github.com/hauptmedia/docker-jmeter  and
 # https://github.com/hhcordero/docker-jmeter-server/blob/master/Dockerfile
-FROM alpine:3.12
+FROM alpine
 
-MAINTAINER Just van den Broecke<just@justobjects.nl>
+LABEL maintainer="steven@promenade.co"
 
-ARG JMETER_VERSION="5.3"
+ARG JMETER_VERSION="5.4.1"
 ENV JMETER_HOME /opt/apache-jmeter-${JMETER_VERSION}
 ENV	JMETER_BIN	${JMETER_HOME}/bin
 ENV	JMETER_DOWNLOAD_URL  https://archive.apache.org/dist/jmeter/binaries/apache-jmeter-${JMETER_VERSION}.tgz
 
 # Install extra packages
 # Set TimeZone, See: https://github.com/gliderlabs/docker-alpine/issues/136#issuecomment-612751142
-ARG TZ="Europe/Amsterdam"
+ARG TZ="America/Los_Angeles"
 ENV TZ ${TZ}
 RUN    apk update \
 	&& apk upgrade \
