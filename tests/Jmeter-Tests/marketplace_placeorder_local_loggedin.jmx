@@ -175,7 +175,7 @@
           <stringProp name="HTTPSampler.port"></stringProp>
           <stringProp name="HTTPSampler.protocol"></stringProp>
           <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-          <stringProp name="HTTPSampler.path">https://dev.core.local/florist/my-beverly-hills-florist/omg-bn-exclusive/</stringProp>
+          <stringProp name="HTTPSampler.path">https://dev.core.local/florist/my-beverly-hills-florist/pink-roses-and-white-hydrangeas/</stringProp>
           <stringProp name="HTTPSampler.method">GET</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
           <boolProp name="HTTPSampler.auto_redirects">false</boolProp>

@@ -175,7 +175,7 @@
           <stringProp name="HTTPSampler.port"></stringProp>
           <stringProp name="HTTPSampler.protocol"></stringProp>
           <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-          <stringProp name="HTTPSampler.path">https://dev.core.local/florist/my-beverly-hills-florist/omg-bn-exclusive/</stringProp>
+          <stringProp name="HTTPSampler.path">https://dev.core.local/florist/my-beverly-hills-florist/pink-roses-and-white-hydrangeas/</stringProp>
           <stringProp name="HTTPSampler.method">GET</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
           <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -198,19 +198,27 @@
           <hashTree/>
         </hashTree>
         <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="HTTP Request" enabled="true">
-          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
-            <collectionProp name="Arguments.arguments"/>
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">vendor_account_id=vndr_oVY8sTU0luNMpFe5&amp;upgrade=premium&amp;price_special=209&amp;delivery_only=0&amp;pickup_only=0&amp;delivery_date=08%2F17%2F2021&amp;qty=0&amp;related_product=&amp;form_key=${form_key}&amp;delivery=08%2F17%2F2021</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
           </elementProp>
           <stringProp name="HTTPSampler.domain"></stringProp>
           <stringProp name="HTTPSampler.port"></stringProp>
           <stringProp name="HTTPSampler.protocol"></stringProp>
           <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-          <stringProp name="HTTPSampler.path">https://dev.core.local/checkout/cart/add/uenc/aHR0cHM6Ly9kZXYuY29yZS5sb2NhbC9jYXRhbG9nL3Byb2R1Y3Qvdmlldy9pZC8zOTMwNjYv/product/393066/?vendor_account_id=vndr_oVY8sTU0luNMpFe5&amp;upgrade=premium&amp;price_special=133&amp;delivery_only=0&amp;pickup_only=0&amp;delivery_date=04%2F30%2F2019&amp;qty=0&amp;related_product=&amp;form_key=${form_key}&amp;delivery=04%2F30%2F2019</stringProp>
+          <stringProp name="HTTPSampler.path">https://dev.core.local/checkout/cart/add/uenc/aHR0cHM6Ly9kZXYuY29yZS5sb2NhbC9jYXRhbG9nL3Byb2R1Y3Qvdmlldy9pZC8xOTM1OS8,/product/19359/form_key/${form_key}/</stringProp>
           <stringProp name="HTTPSampler.method">POST</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
           <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
           <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
           <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <boolProp name="HTTPSampler.BROWSER_COMPATIBLE_MULTIPART">true</boolProp>
           <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
           <stringProp name="HTTPSampler.connect_timeout"></stringProp>
           <stringProp name="HTTPSampler.response_timeout"></stringProp>
